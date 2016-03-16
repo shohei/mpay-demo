@@ -1,0 +1,41 @@
+body {
+  background-color: yellow;
+  font-family: sans-serif;
+}
+
+#main {
+  /* margin: 20px; */
+}
+
+input {
+  width: 300px;
+}
+
+#left{
+  padding: 20px;
+  width:300px;
+  height: 400px;
+  float: left;
+  border: 1px solid gray;
+}
+
+#center{
+  padding: 20px;
+  width:300px;
+  height: 400px;
+  float: left;
+  float: left;
+  margin-left: 50px;
+  border: 1px solid gray;
+}
+
+#right{
+  padding: 20px;
+  width:300px;
+  height: 400px;
+  float: left;
+  float: left;
+  margin-left: 50px;
+  border: 1px solid gray;
+}
+
