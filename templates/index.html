@@ -9,9 +9,15 @@
         $("#pay").on("click",function(){
           var r = confirm("Are you sure to pay 5GHC?");
           if (r == true) {
-            x = "You pressed OK!";
+            $.ajax({
+              url: "http://localhost:8888/",
+              type: "POST",
+              data: "test",
+              success: function(data,status){
+                console.log("post data");
+              }
+            });
             } else {
-            x = "You pressed Cancel!";
           }
         });
       });
@@ -35,10 +41,10 @@
           <p>Address: Effia Kuma, Takoradi, Ghana</p>
           <hr />
           <h3>Your infomation </h3>
-          <p><span>Name: </span><input type="text" value="Shohei Aoki"/></p>
+          <p><span>Name: </span><input type="text" value="Stephen Quagraine"/></p>
           <p><span>Address: </span><input type="text" value="Address: Effia Kuma, Takoradi, Ghana" /></p>
 
-          <p><span>Telephone: </span><input type="text" value="233241943721" /></p>
+          <!-- <p><span>Telephone: </span><input type="text" value="233241943721" /></p> -->
 
 
         </div>
