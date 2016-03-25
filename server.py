@@ -62,9 +62,9 @@ application = tornado.web.Application([
 
 
 if __name__ == "__main__":
-    ser = initSerialPort()
-    t2 = startReadThread()
-    signal.signal(signal.SIGINT, signal_handler)    
+    # ser = initSerialPort()
+    # t2 = startReadThread()
+    # signal.signal(signal.SIGINT, signal_handler)    
     application.listen(8888)
     print("Server is up ...")
     tornado.ioloop.IOLoop.instance().start()
